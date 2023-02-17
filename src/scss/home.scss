@@ -1,0 +1,73 @@
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.contact-us {
+	position: absolute;
+	right: 30px;
+	top: 0;
+	font-size: 30px;
+	padding: 30px;
+	font-weight: 700;
+}
+.home .contact-us .company{
+	color: #222;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.home .contact-us .company span{
+	color: $greenColor;
+	text-transform: uppercase;
+}
+.contact-us a {
+	display:block;
+	color: #222;
+}
+a.insta {
+	width: 50px;
+	margin-left: 30%;
+}
+a.insta img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.home #particles-js{
+	position: absolute;
+	left: 0;top: 0;
+	width: 100%;height: 100%;
+}
+.home::before{
+	content: "";
+	position: absolute;
+	left: 0;top: 0;
+	width: 100%;height: 100%;
+}
+.home .content{
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.home .content img{
+	height: 25rem;
+	width: 25rem;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 1rem solid $greenColor;
+}
+.home .content h3{
+	color: #222;
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+.home .content h3 span{
+	color: $greenColor;
+	text-transform: uppercase;
+}
+.home .content p{
+	color: #222;
+	font-size: 2.5rem;
+}

@@ -1,0 +1,110 @@
+
+
+
+$minWidth:320;
+$maxWidth:1420;
+$maxWidthContainer:1270;
+$md1:$maxWidthContainer + 12;
+$md2:991.98;
+$md3:767.98;
+$md4:479.98;
+
+$fontFamily:"Nunito";
+$fontSize:65;
+$greenColor:#27AE60;
+
+
+
+@import 'nullstyle';
+
+html{
+	font-size: 62.5%;
+	overflow-x:hidden;
+	scroll-behavior: smooth; 
+}
+html::-webkit-scrollbar{
+	width: .7rem;
+}
+html::-webkit-scrollbar-track{
+	background-color: #fff;
+}
+html::-webkit-scrollbar-thumb{
+	background-color: $greenColor;
+}
+body{
+	background-color: #eee;
+	padding-right: 3rem;
+	font-family: 'Nunito', sans-serif;
+}
+section{
+	padding: 2rem 9%;
+	min-height: 100vh;
+}
+.btn{
+	display: inline-block;
+	margin-top: 1rem;
+	padding: .8rem 3rem;
+	background: #222;
+	color: #fff;
+	font-size: 1.7rem;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	&:hover{
+		background-color: $greenColor;
+		letter-spacing: .3rem;
+	}
+}
+
+
+
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'about';
+@import 'services';
+@import 'portfolio';
+@import 'blog';
+@import 'contacts';
+@media (max-width:$md2 + "px"){
+	html{
+		font-size: 55%;
+	}
+	body{
+		padding-right: 0;
+	}
+	header{
+		width: 100%;
+		left: -120%;
+		transition: left 0.3s ease 0s;
+		&.active{
+			left: 0;
+		}
+	}
+	#menu-bars{
+		display: initial;
+	}
+	header .header__navbar {
+		writing-mode: horizontal-tb;
+	}
+	header .header__navbar a{
+		display: block;
+		font-size: 3rem;
+	}
+	section{
+		padding: 2rem;
+	}
+	.contact-us {
+		right: 0;
+		padding: 5px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width:$md4 + "px"){
+	html{
+		font-size: 50%;
+	}
+	.heading{
+		font-size: 4rem;
+	}
+}

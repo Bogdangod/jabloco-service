@@ -1,0 +1,68 @@
+.heading{
+	text-align: center;
+	padding-bottom: 5rem;
+	font-size: 6rem;
+	color: #222;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+.heading span{
+	text-transform: uppercase;
+	color: $greenColor;
+}
+
+.about .row{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+}
+.about .row .image{
+	text-align: center;
+	flex: 1 1 25rem;
+}	
+.about .row .image img{
+	width: 30rem;
+	border-radius: .5rem;
+	border: 1rem solid #fff;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}	
+
+.about .row .content{
+	flex: 1 1 55rem;
+}
+.about .row .content h3{
+	color: #222;
+	font-size: 4rem;
+}
+.about .row .content h3 span{
+	color: $greenColor;
+}
+.about .row .content>p{
+	color: #333;
+	font-size: 1.7rem;
+	padding: 1rem 0;
+	line-height: 1.6;
+}
+p.info{
+	text-transform: uppercase;
+}
+.about .row .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	padding: 1rem 0;
+}
+.about .row .box-container .box{
+	flex: 1 1 20rem;
+}
+.about .row .box-container .box p{
+	font-size: 1.7rem;
+	color: #222;
+	padding: .5rem 0;
+	line-height: 1.7;
+}
+.about .row .box-container .box p span{
+	color: green;
+}

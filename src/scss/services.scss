@@ -1,0 +1,33 @@
+.services{
+	& .box-container{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+		& .box{
+			flex: 1 1 30rem;
+			border-radius: .5rem;
+			background-color: #fff;
+			box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+			padding: 2rem;
+			text-align: center;
+			& h3{
+				font-size: 2rem;
+				color: #222;
+				padding-top: 1rem;
+			}
+			& i{
+				font-size: 5rem;
+				padding: 1rem 0;
+				color: $greenColor;
+
+			}
+			& p{
+				font-size: 1.5rem;
+				padding: 1rem 0;
+				color: #333;
+				line-height: 1.7;
+				text-transform: none;
+			}
+		}
+	}
+}
